@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="a376546d-9e3e-4ba9-9710-2f4b1843a9b7" name="sample_db_kim@172.16.4.182 Mapping">
+      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="641f6823-bcd2-4f18-860b-4bb8c6aaf0ce" />
+      <scope>
+        <node kind="database" qname="sample_db_kim" />
+      </scope>
+    </mapping>
+    <mapping uuid="e4a2b0b0-5577-49da-aab3-552ce2dc24c5" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
+      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="a8bac72d-23f3-4600-a182-31cbeff612e7" />
+      <scope>
+        <node kind="database" qname="sample_db_kim" />
+      </scope>
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="a8bac72d-23f3-4600-a182-31cbeff612e7" />
+          <option name="name" value="sample_db_kim@172.16.4.182 (DDL)" />
+          <option name="dbmsName" value="POSTGRES" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$" />
+            </array>
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>
