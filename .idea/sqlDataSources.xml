@@ -13,12 +13,20 @@
         <node kind="database" qname="sample_db_kim" />
       </scope>
     </mapping>
+    <mapping uuid="12c083e6-241e-46a1-bb6d-297025c7ccd4" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
+      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="a380bd97-6597-4250-8abf-9e457a58fe60" />
+      <scope>
+        <node kind="database" qname="sample_db_kim">
+          <node kind="schema" qname="public" />
+        </node>
+      </scope>
+    </mapping>
   </component>
   <component name="SqlDataSourceStorage">
     <option name="dataSources">
       <list>
         <State>
-          <option name="id" value="a8bac72d-23f3-4600-a182-31cbeff612e7" />
+          <option name="id" value="a380bd97-6597-4250-8abf-9e457a58fe60" />
           <option name="name" value="sample_db_kim@172.16.4.182 (DDL)" />
           <option name="dbmsName" value="POSTGRES" />
           <option name="urls">
