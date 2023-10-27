@@ -1,15 +1,16 @@
-create table public.sales
+CREATE TABLE public.sales
 (
-    sales_id              bigserial
-        primary key,
-    module_id             bigserial
-        references public.module,
-    documentno            varchar(30),
-    proccessed_by_user_id bigserial
-        references public.nvt_user,
-    date_created          timestamp with time zone default now()
+    sales_id              BIGSERIAL
+        PRIMARY KEY,
+    module_id             BIGSERIAL
+        REFERENCES public.module,
+    documentno            VARCHAR(30),
+    tradetype             tradetype_enum,
+    proccessed_by_user_id BIGSERIAL
+        REFERENCES public.nvt_user,
+    date_created          TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-alter table public.sales
-    owner to postgres;
+ALTER TABLE public.sales
+    OWNER TO postgres;
 

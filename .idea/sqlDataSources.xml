@@ -32,12 +32,30 @@
         </node>
       </scope>
     </mapping>
+    <mapping uuid="8d5858be-6f9e-4116-9ff5-650fda144174" name="sample_db_kim@172.16.4.182 (DDL) Mapping [2]">
+      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="aa81bbc7-54d8-4b1f-b912-031a93e35de0" />
+      <scope>
+        <node kind="database" qname="nvt" />
+      </scope>
+    </mapping>
+    <mapping uuid="9c472a08-a6eb-4786-ab11-be871d7aa10c" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
+      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="138b461a-d035-488e-84dc-224b14588b5b" />
+      <scope>
+        <node kind="database" qname="nvt" />
+      </scope>
+    </mapping>
+    <mapping uuid="efc240b2-3efb-4dd8-8c6f-3d094bfb23aa" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
+      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="c720c448-e298-4a92-8d06-c78d4765e984" />
+      <scope>
+        <node kind="database" qname="nvt" />
+      </scope>
+    </mapping>
   </component>
   <component name="SqlDataSourceStorage">
     <option name="dataSources">
       <list>
         <State>
-          <option name="id" value="c9a2ca00-8132-4079-933f-36499db4b777" />
+          <option name="id" value="c720c448-e298-4a92-8d06-c78d4765e984" />
           <option name="name" value="sample_db_kim@172.16.4.182 (DDL)" />
           <option name="dbmsName" value="POSTGRES" />
           <option name="urls">

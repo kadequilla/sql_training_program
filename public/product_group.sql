@@ -1,12 +1,12 @@
-create table public.product_group
+CREATE TABLE public.product_group
 (
-    product_group_id bigserial
-        primary key,
-    group_name       varchar(30) not null
-        unique,
-    date_created     timestamp with time zone default now()
+    product_group_id BIGSERIAL
+        PRIMARY KEY,
+    group_name       VARCHAR(30) NOT NULL
+        UNIQUE,
+    date_created     TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-alter table public.product_group
-    owner to postgres;
+ALTER TABLE public.product_group
+    OWNER TO postgres;
 

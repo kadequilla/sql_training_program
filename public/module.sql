@@ -1,13 +1,14 @@
-create table public.module
+CREATE TABLE public.module
 (
-    module_id    bigserial
-        primary key,
-    module_code  char(10) not null,
-    module_name  varchar(30),
-    stub_curno   integer                  default 0,
-    date_created timestamp with time zone default now()
+    module_id    BIGSERIAL
+        PRIMARY KEY,
+    module_code  CHAR(10) NOT NULL
+        UNIQUE,
+    module_name  VARCHAR(30),
+    stub_curno   INTEGER                  DEFAULT 0,
+    date_created TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-alter table public.module
-    owner to postgres;
+ALTER TABLE public.module
+    OWNER TO postgres;
 

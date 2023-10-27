@@ -1,17 +1,19 @@
-create table public.stockard
+CREATE TABLE public.stockard
 (
-    stockard_id  bigserial
-        primary key,
-    module_id    bigserial
-        references public.module,
-    documentno   varchar(30),
-    qty          numeric(12, 2),
-    amount       numeric(12, 2),
-    qty_bal      numeric(12, 2),
-    amount_bal   numeric(12, 2),
-    date_created timestamp with time zone default now()
+    stockard_id  BIGSERIAL
+        PRIMARY KEY,
+    product_id   BIGSERIAL
+        REFERENCES public.product,
+    module_id    BIGSERIAL
+        REFERENCES public.module,
+    documentno   VARCHAR(30),
+    qty          NUMERIC(12, 2),
+    amount       NUMERIC(12, 2),
+    qty_bal      NUMERIC(12, 2),
+    amount_bal   NUMERIC(12, 2),
+    date_created TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-alter table public.stockard
-    owner to postgres;
+ALTER TABLE public.stockard
+    OWNER TO postgres;
 

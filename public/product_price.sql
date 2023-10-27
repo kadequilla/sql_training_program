@@ -1,14 +1,14 @@
-create table public.product_price
+CREATE TABLE public.product_price
 (
-    product_price_id bigserial
-        primary key,
-    product_id       bigserial
-        references public.product,
-    price            numeric(12, 2),
+    product_price_id BIGSERIAL
+        PRIMARY KEY,
+    product_id       BIGSERIAL
+        REFERENCES public.product,
+    price            NUMERIC(12, 2),
     tradetype        tradetype_enum,
-    date_created     timestamp with time zone default now()
+    date_created     TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-alter table public.product_price
-    owner to postgres;
+ALTER TABLE public.product_price
+    OWNER TO postgres;
 
