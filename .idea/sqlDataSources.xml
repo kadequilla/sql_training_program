@@ -50,12 +50,36 @@
         <node kind="database" qname="nvt" />
       </scope>
     </mapping>
+    <mapping uuid="a0ea8b75-8880-42c9-ba18-74c184bf3c42" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
+      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="033df42b-554c-4699-9451-daafd646b7e7" />
+      <scope>
+        <node kind="database" qname="nvt" />
+      </scope>
+    </mapping>
+    <mapping uuid="cb3bd311-7021-425e-a842-a513a9ac5aa0" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
+      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="366bcfa9-f8b6-478b-ba52-45ab3f930cef" />
+      <scope>
+        <node kind="database" qname="nvt" />
+      </scope>
+    </mapping>
+    <mapping uuid="cec16f56-1584-4d09-a186-6067c74d4442" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
+      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="d722b1e6-1e34-4f93-b043-6b26f906c730" />
+      <scope>
+        <node kind="database" qname="nvt" />
+      </scope>
+    </mapping>
+    <mapping uuid="de2fd2c2-c465-4818-a50a-f4aa15be3ca5" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
+      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="1dfcdc64-c8c5-4e98-a850-b0c09872f8ca" />
+      <scope>
+        <node kind="database" qname="nvt" />
+      </scope>
+    </mapping>
   </component>
   <component name="SqlDataSourceStorage">
     <option name="dataSources">
       <list>
         <State>
-          <option name="id" value="c720c448-e298-4a92-8d06-c78d4765e984" />
+          <option name="id" value="1dfcdc64-c8c5-4e98-a850-b0c09872f8ca" />
           <option name="name" value="sample_db_kim@172.16.4.182 (DDL)" />
           <option name="dbmsName" value="POSTGRES" />
           <option name="urls">
@@ -64,6 +88,7 @@
             </array>
           </option>
           <option name="outLayout" value="File per object by schema.groovy" />
+          <option name="autoSync" value="false" />
         </State>
       </list>
     </option>
