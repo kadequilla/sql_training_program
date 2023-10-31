@@ -7,8 +7,11 @@ $$
         var_amount DECIMAL := get_prod_price(prod_id,var_trade_type);
         var_total_amount DECIMAL := var_amount * param_qty;
         var_has_duplicate_prod BOOLEAN := check_transline_duplicates(id, prod_id, mod_code);
+        var_qty_bal DECIMAL := get_qtybal_per_product(prod_id);
     BEGIN
-        IF mod_code = 'GR' THEN
+        IF var_qty_bal < param_qty AND  mod_code = 'SI' THEN
+            RAISE EXCEPTION 'Not enough inventory balance!';
+        ELSEIF mod_code = 'GR' THEN
             IF var_has_duplicate_prod THEN
                 UPDATE grline up_gl
                 SET qty = qty+param_qty

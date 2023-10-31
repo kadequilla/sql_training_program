@@ -1,75 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DdlMappings">
-    <mapping uuid="a376546d-9e3e-4ba9-9710-2f4b1843a9b7" name="sample_db_kim@172.16.4.182 Mapping">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="641f6823-bcd2-4f18-860b-4bb8c6aaf0ce" />
-      <scope>
-        <node kind="database" qname="sample_db_kim" />
-      </scope>
-    </mapping>
-    <mapping uuid="e4a2b0b0-5577-49da-aab3-552ce2dc24c5" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="46da7ce6-cb34-41d7-b0b3-21d9b077bfa9" />
-      <scope>
-        <node kind="database" qname="nvt" />
-      </scope>
-    </mapping>
-    <mapping uuid="12c083e6-241e-46a1-bb6d-297025c7ccd4" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="a380bd97-6597-4250-8abf-9e457a58fe60" />
-      <scope>
-        <node kind="database" qname="sample_db_kim">
-          <node kind="schema" qname="public" />
-        </node>
-      </scope>
-    </mapping>
-    <mapping uuid="51a22e3b-daf2-4dbe-a208-757b06d10607" name="DDL data source Mapping">
-      <data-sources ddl="b2ad6db3-0265-4ee7-b025-ef8c7518a56b" />
-    </mapping>
-    <mapping uuid="861e260e-1b89-4505-b7df-0db6d39175d3" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="c9a2ca00-8132-4079-933f-36499db4b777" />
-      <scope>
-        <node kind="database" qname="nvt">
-          <node kind="schema" qname="public" />
-        </node>
-      </scope>
-    </mapping>
-    <mapping uuid="8d5858be-6f9e-4116-9ff5-650fda144174" name="sample_db_kim@172.16.4.182 (DDL) Mapping [2]">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="aa81bbc7-54d8-4b1f-b912-031a93e35de0" />
-      <scope>
-        <node kind="database" qname="nvt" />
-      </scope>
-    </mapping>
-    <mapping uuid="9c472a08-a6eb-4786-ab11-be871d7aa10c" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="138b461a-d035-488e-84dc-224b14588b5b" />
-      <scope>
-        <node kind="database" qname="nvt" />
-      </scope>
-    </mapping>
-    <mapping uuid="efc240b2-3efb-4dd8-8c6f-3d094bfb23aa" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="c720c448-e298-4a92-8d06-c78d4765e984" />
-      <scope>
-        <node kind="database" qname="nvt" />
-      </scope>
-    </mapping>
-    <mapping uuid="a0ea8b75-8880-42c9-ba18-74c184bf3c42" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="033df42b-554c-4699-9451-daafd646b7e7" />
-      <scope>
-        <node kind="database" qname="nvt" />
-      </scope>
-    </mapping>
-    <mapping uuid="cb3bd311-7021-425e-a842-a513a9ac5aa0" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="366bcfa9-f8b6-478b-ba52-45ab3f930cef" />
-      <scope>
-        <node kind="database" qname="nvt" />
-      </scope>
-    </mapping>
-    <mapping uuid="cec16f56-1584-4d09-a186-6067c74d4442" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="d722b1e6-1e34-4f93-b043-6b26f906c730" />
-      <scope>
-        <node kind="database" qname="nvt" />
-      </scope>
-    </mapping>
-    <mapping uuid="de2fd2c2-c465-4818-a50a-f4aa15be3ca5" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="1dfcdc64-c8c5-4e98-a850-b0c09872f8ca" />
+    <mapping uuid="4105f0a6-eeff-431d-a2cf-58770ec2a8e0" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
+      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="a330052e-327c-4f78-b818-e6d14edc8d47" />
       <scope>
         <node kind="database" qname="nvt" />
       </scope>
@@ -79,7 +12,7 @@
     <option name="dataSources">
       <list>
         <State>
-          <option name="id" value="1dfcdc64-c8c5-4e98-a850-b0c09872f8ca" />
+          <option name="id" value="a330052e-327c-4f78-b818-e6d14edc8d47" />
           <option name="name" value="sample_db_kim@172.16.4.182 (DDL)" />
           <option name="dbmsName" value="POSTGRES" />
           <option name="urls">
@@ -88,7 +21,6 @@
             </array>
           </option>
           <option name="outLayout" value="File per object by schema.groovy" />
-          <option name="autoSync" value="false" />
         </State>
       </list>
     </option>
