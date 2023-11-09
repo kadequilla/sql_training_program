@@ -5,6 +5,7 @@ $$
     BEGIN
         INSERT INTO module (module_code, module_name, stub_curno, date_created)
         VALUES (param_mod_code, param_mod_name, 0, now());
+        RAISE NOTICE 'Successfully Created!';
     END
 $$;
 

@@ -10,6 +10,7 @@ $$
             username = param_uname,
             password  = param_password
         WHERE nvt_user_id = user_id;
+        RAISE NOTICE 'Successfully Updated!';
     END
 $$;
 

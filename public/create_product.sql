@@ -5,6 +5,7 @@ $$
     BEGIN
         INSERT INTO product (product_group_id, skucode, barcode, product_name, unit, date_created)
         VALUES (param_prod_group_id, param_skucode, param_barcode, param_prodname, param_unit, now());
+        RAISE NOTICE 'Successfully Created!';
     END
 $$;
 

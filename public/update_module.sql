@@ -7,6 +7,7 @@ $$
         SET module_code = param_mod_code,
             module_name = param_mod_name
         WHERE module_id = param_mod_id;
+        RAISE NOTICE 'Successfully Updated!';
     END
 $$;
 

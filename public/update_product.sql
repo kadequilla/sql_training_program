@@ -11,6 +11,7 @@ $$
             unit = param_unit,
             date_created = now()
         WHERE product_id  = param_prodid;
+        RAISE NOTICE 'Successfully Updated!';
     END
 $$;
 

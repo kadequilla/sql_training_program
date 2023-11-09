@@ -5,6 +5,7 @@ $$
     BEGIN
         INSERT INTO product_group ( group_name, date_created)
         VALUES (param_group_name, now());
+        RAISE NOTICE 'Successfully Created!';
     END
 $$;
 

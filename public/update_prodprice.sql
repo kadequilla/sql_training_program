@@ -8,6 +8,7 @@ $$
             price = param_price,
             tradetype = param_trade_type
         WHERE product_price_id = param_prodprice_id;
+        RAISE NOTICE 'Successfully Updated!';
     END
 $$;
 

@@ -4,6 +4,7 @@ AS
 $$
     BEGIN
         DELETE FROM product_group where product_group_id = param_group_id;
+        RAISE NOTICE 'Successfully Deleted!';
     END
 $$;
 

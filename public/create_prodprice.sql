@@ -5,6 +5,7 @@ $$
     BEGIN
         INSERT INTO product_price (product_id, price, tradetype, date_created)
         VALUES (param_prodid, param_price, param_trade_type, now());
+        RAISE NOTICE 'Successfully Created!';
     END
 $$;
 

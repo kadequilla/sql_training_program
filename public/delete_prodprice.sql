@@ -4,6 +4,7 @@ AS
 $$
     BEGIN
         DELETE FROM product_price WHERE product_price_id = param_prodprice_id;
+        RAISE NOTICE 'Successfully Deleted!';
     END
 $$;
 

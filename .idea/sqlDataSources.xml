@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DdlMappings">
-    <mapping uuid="4105f0a6-eeff-431d-a2cf-58770ec2a8e0" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="a330052e-327c-4f78-b818-e6d14edc8d47" />
-      <scope>
-        <node kind="database" qname="nvt" />
-      </scope>
-    </mapping>
-    <mapping uuid="5a96195b-1ce6-46dc-8a4b-5432548d47e1" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
-      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="aa8e15f1-1f2c-4f37-bdc4-b555be5c2d52" />
+    <mapping uuid="6f959e71-aaac-490c-9da7-6d9c0c0d315f" name="sample_db_kim@172.16.4.182 (DDL) Mapping">
+      <data-sources db="b7e47bd2-af6d-4ed7-b63b-5aa9c1c1d7a2" ddl="cc246d8c-3080-455b-a4c0-26a2a7a49d3b" />
       <scope>
         <node kind="database" qname="nvt" />
       </scope>
@@ -18,7 +12,7 @@
     <option name="dataSources">
       <list>
         <State>
-          <option name="id" value="aa8e15f1-1f2c-4f37-bdc4-b555be5c2d52" />
+          <option name="id" value="cc246d8c-3080-455b-a4c0-26a2a7a49d3b" />
           <option name="name" value="sample_db_kim@172.16.4.182 (DDL)" />
           <option name="dbmsName" value="POSTGRES" />
           <option name="urls">
