@@ -23,7 +23,7 @@ $$
                       AND existing_stockard.documentno = to_insert_stockard.documentno
                       AND existing_stockard.module_id = to_insert_stockard.module_id);
 
-         RAISE NOTICE 'Done!';
+         RAISE NOTICE 'Successfully posted stockard for SI!';
     END;
 $$;
 

@@ -20,6 +20,7 @@ $$
                 INSERT INTO grline (gr_id, product_id, qty, amount, total_amount, date_created)
                 VALUES (id, prod_id, param_qty, var_amount, var_total_amount, now());
             END IF;
+            RAISE NOTICE 'Successfully created GR line!';
         ELSEIF mod_code = 'SI' THEN
             IF var_has_duplicate_prod THEN
                 UPDATE salesline up_sl
@@ -29,6 +30,7 @@ $$
                 INSERT INTO salesline (sales_id, product_id, qty, amount, total_amount, date_created)
                 VALUES (id, prod_id, param_qty, var_amount, var_total_amount, now());
             END IF;
+            RAISE NOTICE 'Successfully created sales invoice line!';
         END IF;
 
         EXCEPTION

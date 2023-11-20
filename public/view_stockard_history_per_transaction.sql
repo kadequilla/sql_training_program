@@ -1,5 +1,7 @@
-CREATE VIEW public.view_stockard_history_per_transaction(skucode, product_name, documentno, qty, amount, qty_bal, amount_bal) AS
-SELECT product.skucode,
+CREATE VIEW public.view_stockard_history_per_transaction
+            (product_id, skucode, product_name, documentno, qty, amount, qty_bal, amount_bal) AS
+SELECT product.product_id,
+       product.skucode,
        product.product_name,
        stockard.documentno,
        stockard.qty,
