@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.delete_module(IN param_mod_id bigint)
+CREATE PROCEDURE delete_module(IN param_mod_id bigint)
     LANGUAGE plpgsql
 AS
 $$
@@ -8,5 +8,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.delete_module(BIGINT) OWNER TO postgres;
+ALTER PROCEDURE delete_module(BIGINT) OWNER TO postgres;
 

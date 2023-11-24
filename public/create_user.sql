@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.create_user(IN param_fname character varying, IN param_mname character varying, IN param_lname character varying, IN param_uname character varying, IN param_password character varying)
+CREATE PROCEDURE create_user(IN param_fname character varying, IN param_mname character varying, IN param_lname character varying, IN param_uname character varying, IN param_password character varying)
     LANGUAGE plpgsql
 AS
 $$
@@ -9,5 +9,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.create_user(VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR) OWNER TO postgres;
+ALTER PROCEDURE create_user(VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR) OWNER TO postgres;
 

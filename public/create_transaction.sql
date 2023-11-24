@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.create_transaction(INOUT id bigint, IN mod_code character, IN param_tradetype tradetype_enum)
+CREATE PROCEDURE create_transaction(INOUT id bigint, IN mod_code character, IN param_tradetype tradetype_enum)
     LANGUAGE plpgsql
 AS
 $$
@@ -27,5 +27,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.create_transaction(INOUT BIGINT, CHAR, tradetype_enum) OWNER TO postgres;
+ALTER PROCEDURE create_transaction(INOUT BIGINT, CHAR, tradetype_enum) OWNER TO postgres;
 

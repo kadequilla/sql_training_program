@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.delete_user(IN user_id bigint)
+CREATE PROCEDURE delete_user(IN user_id bigint)
     LANGUAGE plpgsql
 AS
 $$
@@ -8,5 +8,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.delete_user(BIGINT) OWNER TO postgres;
+ALTER PROCEDURE delete_user(BIGINT) OWNER TO postgres;
 

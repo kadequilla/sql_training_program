@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.post_stockard_gr(IN id bigint)
+CREATE PROCEDURE post_stockard_gr(IN id bigint)
     LANGUAGE plpgsql
 AS
 $$
@@ -27,5 +27,5 @@ $$
     END;
 $$;
 
-ALTER PROCEDURE public.post_stockard_gr(BIGINT) OWNER TO postgres;
+ALTER PROCEDURE post_stockard_gr(BIGINT) OWNER TO postgres;
 

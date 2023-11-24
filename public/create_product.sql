@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.create_product(IN param_prod_group_id bigint, IN param_skucode character varying, IN param_barcode character varying, IN param_prodname character varying, IN param_unit character)
+CREATE PROCEDURE create_product(IN param_prod_group_id bigint, IN param_skucode character varying, IN param_barcode character varying, IN param_prodname character varying, IN param_unit character)
     LANGUAGE plpgsql
 AS
 $$
@@ -9,5 +9,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.create_product(BIGINT, VARCHAR, VARCHAR, VARCHAR, CHAR) OWNER TO postgres;
+ALTER PROCEDURE create_product(BIGINT, VARCHAR, VARCHAR, VARCHAR, CHAR) OWNER TO postgres;
 

@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.update_product(IN param_prodid bigint, IN param_prod_group_id bigint, IN param_skucode character varying, IN param_barcode character varying, IN param_prodname character varying, IN param_unit character)
+CREATE PROCEDURE update_product(IN param_prodid bigint, IN param_prod_group_id bigint, IN param_skucode character varying, IN param_barcode character varying, IN param_prodname character varying, IN param_unit character)
     LANGUAGE plpgsql
 AS
 $$
@@ -15,5 +15,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.update_product(BIGINT, BIGINT, VARCHAR, VARCHAR, VARCHAR, CHAR) OWNER TO postgres;
+ALTER PROCEDURE update_product(BIGINT, BIGINT, VARCHAR, VARCHAR, VARCHAR, CHAR) OWNER TO postgres;
 

@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.update_module(IN param_mod_id bigint, IN param_mod_code character varying, IN param_mod_name character varying)
+CREATE PROCEDURE update_module(IN param_mod_id bigint, IN param_mod_code character varying, IN param_mod_name character varying)
     LANGUAGE plpgsql
 AS
 $$
@@ -11,5 +11,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.update_module(BIGINT, VARCHAR, VARCHAR) OWNER TO postgres;
+ALTER PROCEDURE update_module(BIGINT, VARCHAR, VARCHAR) OWNER TO postgres;
 

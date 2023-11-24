@@ -1,4 +1,4 @@
-CREATE TABLE public.product_group
+CREATE TABLE product_group
 (
     product_group_id BIGSERIAL
         PRIMARY KEY,
@@ -7,6 +7,6 @@ CREATE TABLE public.product_group
     date_created     TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-ALTER TABLE public.product_group
+ALTER TABLE product_group
     OWNER TO postgres;
 

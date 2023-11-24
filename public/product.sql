@@ -1,9 +1,9 @@
-CREATE TABLE public.product
+CREATE TABLE product
 (
     product_id       BIGSERIAL
         PRIMARY KEY,
     product_group_id BIGSERIAL
-        REFERENCES public.product_group,
+        REFERENCES product_group,
     skucode          VARCHAR(30) NOT NULL
         UNIQUE,
     barcode          VARCHAR(30),
@@ -12,6 +12,6 @@ CREATE TABLE public.product
     date_created     TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-ALTER TABLE public.product
+ALTER TABLE product
     OWNER TO postgres;
 

@@ -1,4 +1,4 @@
-CREATE TABLE public.module
+CREATE TABLE module
 (
     module_id    BIGSERIAL
         PRIMARY KEY,
@@ -9,6 +9,6 @@ CREATE TABLE public.module
     date_created TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-ALTER TABLE public.module
+ALTER TABLE module
     OWNER TO postgres;
 

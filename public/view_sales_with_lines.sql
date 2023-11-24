@@ -1,4 +1,4 @@
-CREATE VIEW public.view_sales_with_lines(tradetype, documentno, product_id, qty, amount, total_amount) AS
+CREATE VIEW view_sales_with_lines(tradetype, documentno, product_id, qty, amount, total_amount) AS
 SELECT sales.tradetype,
        sales.documentno,
        sline.product_id,
@@ -8,6 +8,6 @@ SELECT sales.tradetype,
 FROM sales
          LEFT JOIN salesline sline ON sales.sales_id = sline.sales_id;
 
-ALTER TABLE public.view_sales_with_lines
+ALTER TABLE view_sales_with_lines
     OWNER TO postgres;
 

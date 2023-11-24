@@ -1,4 +1,4 @@
-CREATE FUNCTION public.check_transline_duplicates(trans_id bigint, prod_id bigint, mod_code character) RETURNS boolean
+CREATE FUNCTION check_transline_duplicates(trans_id bigint, prod_id bigint, mod_code character) RETURNS boolean
     LANGUAGE plpgsql
 AS
 $$
@@ -28,5 +28,5 @@ $$
     END
 $$;
 
-ALTER FUNCTION public.check_transline_duplicates(BIGINT, BIGINT, CHAR) OWNER TO postgres;
+ALTER FUNCTION check_transline_duplicates(BIGINT, BIGINT, CHAR) OWNER TO postgres;
 

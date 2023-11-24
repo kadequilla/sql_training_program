@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.delete_product_group(IN param_group_id bigint)
+CREATE PROCEDURE delete_product_group(IN param_group_id bigint)
     LANGUAGE plpgsql
 AS
 $$
@@ -8,5 +8,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.delete_product_group(BIGINT) OWNER TO postgres;
+ALTER PROCEDURE delete_product_group(BIGINT) OWNER TO postgres;
 

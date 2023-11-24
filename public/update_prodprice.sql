@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.update_prodprice(IN param_prodprice_id bigint, IN param_prodid bigint, IN param_price numeric, IN param_trade_type tradetype_enum)
+CREATE PROCEDURE update_prodprice(IN param_prodprice_id bigint, IN param_prodid bigint, IN param_price numeric, IN param_trade_type tradetype_enum)
     LANGUAGE plpgsql
 AS
 $$
@@ -12,5 +12,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.update_prodprice(BIGINT, BIGINT, NUMERIC, tradetype_enum) OWNER TO postgres;
+ALTER PROCEDURE update_prodprice(BIGINT, BIGINT, NUMERIC, tradetype_enum) OWNER TO postgres;
 

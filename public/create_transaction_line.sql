@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.create_transaction_line(IN id bigint, IN prod_id bigint, IN param_qty numeric, IN mod_code character)
+CREATE PROCEDURE create_transaction_line(IN id bigint, IN prod_id bigint, IN param_qty numeric, IN mod_code character)
     LANGUAGE plpgsql
 AS
 $$
@@ -39,5 +39,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.create_transaction_line(BIGINT, BIGINT, NUMERIC, CHAR) OWNER TO postgres;
+ALTER PROCEDURE create_transaction_line(BIGINT, BIGINT, NUMERIC, CHAR) OWNER TO postgres;
 

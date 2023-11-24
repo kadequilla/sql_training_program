@@ -1,4 +1,4 @@
-CREATE FUNCTION public.get_one_tradetype_of_transactions(trans_id bigint, mod_code character) RETURNS tradetype_enum
+CREATE FUNCTION get_one_tradetype_of_transactions(trans_id bigint, mod_code character) RETURNS tradetype_enum
     LANGUAGE plpgsql
 AS
 $$
@@ -21,5 +21,5 @@ $$
     END
 $$;
 
-ALTER FUNCTION public.get_one_tradetype_of_transactions(BIGINT, CHAR) OWNER TO postgres;
+ALTER FUNCTION get_one_tradetype_of_transactions(BIGINT, CHAR) OWNER TO postgres;
 

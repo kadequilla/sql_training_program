@@ -1,4 +1,4 @@
-CREATE FUNCTION public.get_qtybal_per_product(prod_id bigint) RETURNS numeric
+CREATE FUNCTION get_qtybal_per_product(prod_id bigint) RETURNS numeric
     LANGUAGE plpgsql
 AS
 $$
@@ -7,5 +7,5 @@ $$
     END;
 $$;
 
-ALTER FUNCTION public.get_qtybal_per_product(BIGINT) OWNER TO postgres;
+ALTER FUNCTION get_qtybal_per_product(BIGINT) OWNER TO postgres;
 

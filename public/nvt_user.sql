@@ -1,4 +1,4 @@
-CREATE TABLE public.nvt_user
+CREATE TABLE nvt_user
 (
     nvt_user_id BIGSERIAL
         PRIMARY KEY,
@@ -11,6 +11,6 @@ CREATE TABLE public.nvt_user
     datecreated TIMESTAMP WITH TIME ZONE
 );
 
-ALTER TABLE public.nvt_user
+ALTER TABLE nvt_user
     OWNER TO postgres;
 

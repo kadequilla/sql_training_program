@@ -1,4 +1,4 @@
-CREATE TYPE public.tradetype_enum AS ENUM ('WHOLESALE', 'RETAIL');
+CREATE TYPE tradetype_enum AS ENUM ('WHOLESALE', 'RETAIL');
 
-ALTER TYPE public.tradetype_enum OWNER TO postgres;
+ALTER TYPE tradetype_enum OWNER TO postgres;
 

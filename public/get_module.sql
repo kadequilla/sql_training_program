@@ -1,4 +1,4 @@
-CREATE FUNCTION public.get_module(mcode character)
+CREATE FUNCTION get_module(mcode character)
     RETURNS TABLE(module_id bigint, document_no character varying)
     LANGUAGE plpgsql
 AS
@@ -11,5 +11,5 @@ $$
     END
 $$;
 
-ALTER FUNCTION public.get_module(CHAR) OWNER TO postgres;
+ALTER FUNCTION get_module(CHAR) OWNER TO postgres;
 

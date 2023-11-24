@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.delete_prodprice(IN param_prodprice_id bigint)
+CREATE PROCEDURE delete_prodprice(IN param_prodprice_id bigint)
     LANGUAGE plpgsql
 AS
 $$
@@ -8,5 +8,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.delete_prodprice(BIGINT) OWNER TO postgres;
+ALTER PROCEDURE delete_prodprice(BIGINT) OWNER TO postgres;
 

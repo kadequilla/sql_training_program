@@ -1,4 +1,4 @@
-CREATE VIEW public.view_product_price_history
+CREATE VIEW view_product_price_history
             (product_price_id, product_id, skucode, product_name, unit, tradetype, price, date_created) AS
 SELECT prdprice.product_price_id,
        prod.product_id,
@@ -12,6 +12,6 @@ FROM product_price prdprice
          JOIN product prod ON prdprice.product_id = prod.product_id
 ORDER BY prod.product_id, prdprice.tradetype, prdprice.date_created;
 
-ALTER TABLE public.view_product_price_history
+ALTER TABLE view_product_price_history
     OWNER TO postgres;
 

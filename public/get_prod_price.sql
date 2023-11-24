@@ -1,4 +1,4 @@
-CREATE FUNCTION public.get_prod_price(prod_id bigint, param_tradetype tradetype_enum) RETURNS numeric
+CREATE FUNCTION get_prod_price(prod_id bigint, param_tradetype tradetype_enum) RETURNS numeric
     LANGUAGE plpgsql
 AS
 $$
@@ -18,5 +18,5 @@ $$
     END
 $$;
 
-ALTER FUNCTION public.get_prod_price(BIGINT, tradetype_enum) OWNER TO postgres;
+ALTER FUNCTION get_prod_price(BIGINT, tradetype_enum) OWNER TO postgres;
 

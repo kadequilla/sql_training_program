@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.update_product_group(IN param_group_id bigint, IN param_group_name character varying)
+CREATE PROCEDURE update_product_group(IN param_group_id bigint, IN param_group_name character varying)
     LANGUAGE plpgsql
 AS
 $$
@@ -10,5 +10,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.update_product_group(BIGINT, VARCHAR) OWNER TO postgres;
+ALTER PROCEDURE update_product_group(BIGINT, VARCHAR) OWNER TO postgres;
 

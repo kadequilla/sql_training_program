@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.create_module(IN param_mod_code character varying, IN param_mod_name character varying)
+CREATE PROCEDURE create_module(IN param_mod_code character varying, IN param_mod_name character varying)
     LANGUAGE plpgsql
 AS
 $$
@@ -9,5 +9,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.create_module(VARCHAR, VARCHAR) OWNER TO postgres;
+ALTER PROCEDURE create_module(VARCHAR, VARCHAR) OWNER TO postgres;
 

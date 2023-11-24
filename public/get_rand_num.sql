@@ -1,4 +1,4 @@
-CREATE FUNCTION public.get_rand_num(from_num integer, to_num integer) RETURNS numeric
+CREATE FUNCTION get_rand_num(from_num integer, to_num integer) RETURNS numeric
     LANGUAGE plpgsql
 AS
 $$
@@ -9,5 +9,5 @@ $$
     END;
 $$;
 
-ALTER FUNCTION public.get_rand_num(INTEGER, INTEGER) OWNER TO postgres;
+ALTER FUNCTION get_rand_num(INTEGER, INTEGER) OWNER TO postgres;
 

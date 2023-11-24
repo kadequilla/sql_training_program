@@ -1,11 +1,11 @@
-CREATE TABLE public.stockard
+CREATE TABLE stockard
 (
     stockard_id  BIGSERIAL
         PRIMARY KEY,
     product_id   BIGSERIAL
-        REFERENCES public.product,
+        REFERENCES product,
     module_id    BIGSERIAL
-        REFERENCES public.module,
+        REFERENCES module,
     documentno   VARCHAR(30),
     qty          NUMERIC(12, 2),
     amount       NUMERIC(12, 2),
@@ -14,6 +14,6 @@ CREATE TABLE public.stockard
     date_created TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-ALTER TABLE public.stockard
+ALTER TABLE stockard
     OWNER TO postgres;
 

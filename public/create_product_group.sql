@@ -1,4 +1,4 @@
-CREATE PROCEDURE public.create_product_group(IN param_group_name character varying)
+CREATE PROCEDURE create_product_group(IN param_group_name character varying)
     LANGUAGE plpgsql
 AS
 $$
@@ -9,5 +9,5 @@ $$
     END
 $$;
 
-ALTER PROCEDURE public.create_product_group(VARCHAR) OWNER TO postgres;
+ALTER PROCEDURE create_product_group(VARCHAR) OWNER TO postgres;
 

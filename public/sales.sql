@@ -1,16 +1,16 @@
-CREATE TABLE public.sales
+CREATE TABLE sales
 (
     sales_id              BIGSERIAL
         PRIMARY KEY,
     module_id             BIGSERIAL
-        REFERENCES public.module,
+        REFERENCES module,
     documentno            VARCHAR(30),
     tradetype             tradetype_enum,
     proccessed_by_user_id BIGSERIAL
-        REFERENCES public.nvt_user,
+        REFERENCES nvt_user,
     date_created          TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-ALTER TABLE public.sales
+ALTER TABLE sales
     OWNER TO postgres;
 
