@@ -4,7 +4,7 @@ AS
 $$
     BEGIN
         UPDATE product_group
-        SET group_name = param_group_name
+        SET group_name = is_null_empty(param_group_name,group_name)
         WHERE product_group_id = param_group_id;
         RAISE NOTICE 'Successfully Updated!';
     END

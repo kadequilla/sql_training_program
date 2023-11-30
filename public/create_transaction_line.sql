@@ -33,6 +33,9 @@ $$
             RAISE NOTICE 'Successfully created sales invoice line!';
         END IF;
 
+        CALL post_stockard_gr(id);
+        CALL post_stockard_sales(id);
+
         EXCEPTION
         WHEN OTHERS THEN
         RAISE NOTICE 'Error: %', SQLERRM;

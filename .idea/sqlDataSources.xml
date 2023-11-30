@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DdlMappings">
-    <mapping uuid="97eb9f69-c2fe-49ea-98e5-609dfe13a23d" name="kadequilla@172.16.4.182 (DDL) Mapping">
-      <data-sources db="a1c98833-dc7d-4dc6-82cd-0cb9acf20283" ddl="8239aad6-fb6a-4532-baa4-9d14a4f09612" />
+    <mapping uuid="d5a92748-1e94-420d-bdaf-ce94244bc6bf" name="kadequilla@172.16.4.182 (DDL) Mapping">
+      <data-sources db="a1c98833-dc7d-4dc6-82cd-0cb9acf20283" ddl="6cef07a7-18d9-4c40-a23e-ddc41dc1f920" />
       <scope>
         <node kind="database" qname="nvt" />
       </scope>
@@ -12,7 +12,7 @@
     <option name="dataSources">
       <list>
         <State>
-          <option name="id" value="8239aad6-fb6a-4532-baa4-9d14a4f09612" />
+          <option name="id" value="e1928ac5-7343-4f9d-9ccc-403074f2ec11" />
           <option name="name" value="kadequilla@172.16.4.182 (DDL)" />
           <option name="dbmsName" value="POSTGRES" />
           <option name="urls">
