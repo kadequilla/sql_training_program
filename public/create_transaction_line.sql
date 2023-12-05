@@ -10,6 +10,7 @@ $$
         var_qty_bal DECIMAL := get_qtybal_per_product(prod_id);
     BEGIN
         IF var_qty_bal < param_qty AND  mod_code = 'SI' THEN
+            ROLLBACK ;
             RAISE EXCEPTION 'Not enough inventory balance!';
         ELSEIF mod_code = 'GR' THEN
             IF var_has_duplicate_prod THEN
@@ -20,6 +21,7 @@ $$
                 INSERT INTO grline (gr_id, product_id, qty, amount, total_amount, date_created)
                 VALUES (id, prod_id, param_qty, var_amount, var_total_amount, now());
             END IF;
+
             RAISE NOTICE 'Successfully created GR line!';
         ELSEIF mod_code = 'SI' THEN
             IF var_has_duplicate_prod THEN
@@ -35,6 +37,7 @@ $$
 
         CALL post_stockard_gr(id);
         CALL post_stockard_sales(id);
+
 
         EXCEPTION
         WHEN OTHERS THEN
