@@ -4,6 +4,7 @@ AS
 $$
     BEGIN
         RETURN (
+            -- MAC = (Previous MAC × previous quantity + new purchase cost*qty) / total quantity
             coalesce(
                 (SELECT
                 (coalesce(mac, 0.00)*coalesce(qty_bal,0.00) + (new_cost*new_qty)) / (coalesce(qty_bal,0.00)+new_qty)

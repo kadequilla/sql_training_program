@@ -1,10 +1,11 @@
 CREATE VIEW view_stockard_history_per_transaction
-            (product_id, skucode, product_name, documentno, qty, amount, qty_bal, amount_bal, mac, date_created,
+            (product_id, skucode, product_name, documentno, cost, qty, amount, qty_bal, amount_bal, mac, date_created,
              islatest) AS
 SELECT product.product_id,
        product.skucode,
        product.product_name,
        stockard.documentno,
+       stockard.cost,
        stockard.qty,
        stockard.amount,
        stockard.qty_bal,

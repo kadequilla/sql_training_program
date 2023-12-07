@@ -7,12 +7,18 @@
         <node kind="database" qname="nvt" />
       </scope>
     </mapping>
+    <mapping uuid="5f94ecd8-3d06-4627-a31e-b10c3453e5f7" name="kadequilla@172.16.4.182 (DDL) Mapping">
+      <data-sources db="a1c98833-dc7d-4dc6-82cd-0cb9acf20283" ddl="b394deaa-a12d-4138-9330-1d9ea36f45ba" />
+      <scope>
+        <node kind="database" qname="nvt" />
+      </scope>
+    </mapping>
   </component>
   <component name="SqlDataSourceStorage">
     <option name="dataSources">
       <list>
         <State>
-          <option name="id" value="b394deaa-a12d-4138-9330-1d9ea36f45ba" />
+          <option name="id" value="5ef712cf-53ba-4d98-a17a-44e4ed745983" />
           <option name="name" value="kadequilla@172.16.4.182 (DDL)" />
           <option name="dbmsName" value="POSTGRES" />
           <option name="urls">
