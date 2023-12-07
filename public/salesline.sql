@@ -7,7 +7,7 @@ CREATE TABLE salesline
     product_id   BIGSERIAL
         REFERENCES product,
     qty          NUMERIC(12, 2),
-    amount       NUMERIC(12, 2),
+    cost         NUMERIC(12, 2),
     total_amount NUMERIC(12, 2),
     date_created TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );

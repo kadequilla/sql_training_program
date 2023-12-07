@@ -3,15 +3,17 @@ CREATE PROCEDURE post_stockard_sales(IN id bigint)
 AS
 $$
     BEGIN
-        INSERT INTO stockard (product_id, module_id, documentno, qty, amount, qty_bal, amount_bal, date_created)
+        INSERT INTO stockard (product_id, module_id, documentno, qty, cost, amount, qty_bal, amount_bal, mac, date_created)
         SELECT * FROM (SELECT
             sl.product_id,
             s.module_id,
             s.documentno,
             (sl.qty)*-1,
+            cost,
             (sl.total_amount)*-1,
             stockard.qty_bal + (sl.qty*-1) AS qty_bal,
             stockard.amt_bal + (sl.total_amount*-1) AS amount_bal,
+            stockard.mac,
             now() date_created
 
         FROM sales s
